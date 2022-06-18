@@ -10,9 +10,9 @@ const promise3 = new Promise((resolve, reject) => {
     setTimeout(resolve,0,"Third")
 })
 
-// const res = new Promise((resolve, reject) => {
-//     reject("Error")
-// })
+const res = new Promise((resolve, reject) => {
+    reject("Error")
+})
 
 Promise.all([promise1, promise2, promise3])
        .then(values => {

@@ -5,7 +5,7 @@ for(var i = 0; i < arr.length; i++) {
     function closeUp(i) {
         setTimeout(function() { 
             console.log(arr[i])
-        },4000)
+        },arr[i]*1000)
     }
     closeUp(i);
 }
